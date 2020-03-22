@@ -2,7 +2,7 @@
   "signing": {
     "default": {
       "ocsp_url": "http://localhost:8080",
-      "expiry": "25y",
+      "expiry": "219000h",
       "usages": [
         "signing",
         "key encipherment",
@@ -12,19 +12,20 @@
     "profiles": {
       "ocsp": {
         "usages": ["digital signature", "ocsp signing"],
-        "expiry": "1y"
+        "expiry": "8760h"
       },
       "intermediate": {
         "usages": ["cert sign", "crl sign"],
+        "expiry": "219000h",
         "ca_constraint": {"is_ca": true}
       },
       "server": {
         "usages": ["signing", "key encipherment", "server auth"],
-        "expiry": "1y"
+        "expiry": "8760h"
       },
       "client": {
         "usages": ["signing", "key encipherment", "client auth"],
-        "expiry": "1y"
+        "expiry": "8760h"
       }
     }
   }
