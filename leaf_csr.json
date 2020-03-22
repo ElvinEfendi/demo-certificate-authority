@@ -1,0 +1,20 @@
+{
+  "CN": "customer.com",
+  "hosts": [
+    "customer.com",
+    "www.customer.com"
+  ],
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "US",
+      "L": "San Francisco",
+      "O": "Customer",
+      "OU": "Website",
+      "ST": "California"
+    }
+  ]
+}
