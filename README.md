@@ -7,4 +7,8 @@ and store (using `cfssljson`) the generated certificate request (`ca.csr`), cert
 cfssl gencert -initca ca_csr.json | cfssljson -bare ca
 ```
 
-Before creating an intermediate CA, and other certificates we need signing configuration for cfssl
+Next we create an intermediate CA based on the root CA:
+
+```
+cfssl gencert -ca ca.pem -ca-key ca-key.pem -config=cfssl_config.json -profile=intermediate intermediate_ca_csr.json | cfssljson -bare intermediate_ca
+```
