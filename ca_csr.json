@@ -1,0 +1,16 @@
+{
+  "CN": "Elvin's Demo Root CA",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "CA",
+      "L": "Ottawa",
+      "O": "Elvin's Demo",
+      "OU": "Elvin's Demo Root CA",
+      "ST": "Ontario"
+    }
+  ]
+}
