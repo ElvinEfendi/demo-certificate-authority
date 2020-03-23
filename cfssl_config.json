@@ -1,7 +1,7 @@
 {
   "signing": {
     "default": {
-      "ocsp_url": "http://localhost:8080",
+      "ocsp_url": "http://ocsp-svc:8080",
       "expiry": "219000h",
       "usages": [
         "signing",

@@ -115,3 +115,11 @@ Appendix
 ```
 psql -U postgres -h localhost -p 5432 certdb_development
 ```
+
+```
+cfssl print-defaults csr
+```
+
+```
+cfssl print-defaults config
+```
